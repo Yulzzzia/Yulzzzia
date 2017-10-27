@@ -3,7 +3,7 @@ Averysoft scheme transformation v6 - v7:
 		- Attributes added if not present:
 			* revision
 			* version
-			Updated
+			Updated Yulia Test commit
 		
 	> Tag <avery:text> 
 		- Extended to
