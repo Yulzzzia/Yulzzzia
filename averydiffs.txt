@@ -1,0 +1,32 @@
+Averysoft scheme transformation v6 - v7:
+	> Tag <avery:project>
+		- Attributes added if not present:
+			* revision
+			* version
+			Updated
+		
+	> Tag <avery:text> 
+		- Extended to
+			<avery:text>
+				<TextFlow xmlns="http://ns.adobe.com/textLayout/2008">
+					<p><span></span></p>
+				</TextFlow>
+			</avery:text>
+			
+	> Tag <avery:outline>
+		- is added to a v7 xml inside <avery:drawing> tag
+	
+	> Tag <textLine>
+		- replaced by <textBlock>
+		
+	>Tag <textPath>
+		- attribute startPosition was made optional in xsd(?)
+		- attribute textAngle added (optional)	
+	
+	> Tag <fieldRef>
+		- zOrder attribute added for each fieldRef with incremental values starting with 2
+	
+	> OTHER:
+		- Removed redundant point in all numbers. For example 5.0 => 5 but 5.1 => 5.1
+		- styleId attribute added to tags <avery:background> and <avery:image> (bug?)
+		- the contentId and geometryId attributes are always defined explicitly
